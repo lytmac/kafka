@@ -19,7 +19,7 @@ package org.apache.kafka.common;
 /**
  * Information about a Kafka node
  */
-public class Node {
+public class Node { //标识的是一个kafka集群中的broker的信息
 
     private static final Node NO_NODE = new Node(-1, "", -1);
 

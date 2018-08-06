@@ -941,7 +941,7 @@ public class KafkaProducer<K, V> implements Producer<K, V> {
         // add topic to metadata topic list if it is not there already and reset expiry
         Cluster cluster = metadata.fetch();
 
-        if (cluster.invalidTopics().contains(topic))
+        if (cluster.invalidTopics().contains(topic)) //
             throw new InvalidTopicException(topic);
 
         metadata.add(topic);
